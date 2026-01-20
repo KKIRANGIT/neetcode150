@@ -8,6 +8,14 @@
 
 public class TwoSumII {
 
+    public static void main(String[] args) {
+        TwoSumII ts = new TwoSumII();
+        int[] numbers = {2, 7, 11, 15};
+        int target = 9;
+        int[] result = ts.twoSum(numbers, target);
+        System.out.println("Indices: [" + result[0] + ", " + result[1] + "]"); // Output: Indices: [1, 2]
+    }
+
     public int[] twoSum(int[] numbers, int target) {
         int left = 0;
         int right = numbers.length - 1;

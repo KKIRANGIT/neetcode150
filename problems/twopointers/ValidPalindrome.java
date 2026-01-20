@@ -4,6 +4,13 @@
 
 public class ValidPalindrome {
 
+    public static void main(String[] args) {
+        ValidPalindrome vp = new ValidPalindrome();
+        String s = "A man, a plan, a canal: Panama";
+        boolean result = vp.isPalindrome(s);
+        System.out.println(result); // Output: true
+    }
+
     public boolean isPalindrome(String s) {
         int left = 0, right = s.length() - 1;
         while (left < right) {
